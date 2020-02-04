@@ -3,6 +3,9 @@ node_modules/
 /4d-assets/
 .editorconfig
 /business assets/
+/dist/
+/stage/
+
 
 
 
