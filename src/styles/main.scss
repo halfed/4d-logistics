@@ -1,0 +1,35 @@
+@import 'settings';
+@import '~foundation-sites/scss/foundation';
+@include foundation-everything;
+
+body {
+	font-size: 15px;
+}
+
+select {
+	border-radius: 5px;
+}
+
+.input-error {
+	label {
+		color: $warning;
+		font-weight: 700;
+	}
+
+	input, textarea, select {
+		border-color: $warning;
+	}
+
+	.form-error {
+		display: block;
+	}
+}
+
+.alert-message {
+	color: $warning;
+	font-weight: 600;
+}
+
+.off-canvas-absolute {
+	background-color: #333333;
+}
