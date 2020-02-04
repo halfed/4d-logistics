@@ -1,0 +1,21 @@
+#Options -Indexes
+
+
+# Run Php without filename extension
+#RewriteEngine on
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME}.php -f
+#RewriteRule ^(.*)$ $1.php
+
+# Return 404 if original request is .php
+#RewriteCond %{THE_REQUEST} "^[^ ]* .*?\.php[? ].*$"
+#RewriteRule .* - [L,R=404]
+
+
+
+## FOR PHP DEPLOY
+#Options -Indexes
+#RewriteEngine On
+#RewriteCond %{Request_Filename} !-F
+#RewriteCond %{Request_Filename} !-d
+#RewriteRule ^ index.php [QSA,L]
